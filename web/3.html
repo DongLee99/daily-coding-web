@@ -4,6 +4,7 @@
 <title> WEB3 - JavaScript </title>
 <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src = "colors.js"></script>
     <script>
         function setColor(color) {
             var alist = document.querySelectorAll('a');
@@ -32,6 +33,48 @@
                 self.value = 'night';
                 setColor('blue');
             }
+        }
+    </script>
+    <script>
+        body {
+            margin: 0;
+        }
+        body, a {
+            text-decoration: none;
+        }
+        h1 {
+            border-bottom: 1px solid gray;
+            margin : 0;
+            padding: 20px;
+            text-align: center;
+            font-size: 45px;
+        }
+        #grid ol {
+            padding-left: 33px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article {
+            padding-left: 25px;
+        }
+        @media (max-width : 800px) {
+            #grid {
+                display: block;
+            }
+            ol {
+                border-right: none;
+            }
+            h1 {
+                border-bottom: none;
+            }
+        }
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin : 0;
+            padding : 20px;
         }
     </script>
 </head>
